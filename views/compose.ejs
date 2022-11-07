@@ -1,0 +1,17 @@
+<%- include("header") -%>
+
+<form action="/" method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label ">Title</label>
+        <input name="postTitle" type="text" class="form-control title" id="title" autocomplete="off" >
+        
+      </div>
+      <div class="form-floating">
+        <label for="body">Post</label>
+        <textarea class="form-control post" name="postBody" id="body" style="height: 100px" autocomplete="off"></textarea>
+       
+      </div>
+      <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+
+<%- include("footer") -%>
